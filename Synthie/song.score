@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<score bpm="250" beatspermeasure="2">
+     <instrument instrument="AdditiveSynth">
+          <note measure="1" beat="2" duration="1,66" note="Eb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="2" beat="2" duration="1,66" note="Db4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+       
+          <note measure="3" beat="8" duration="7,66" note="Gb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+          <note measure="7" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="7" beat="4" duration="3,66" note="Gb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+          <note measure="9" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="9" beat="4" duration="3,66" note="Gb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+	      <note measure="12" beat="2" duration="1,66" note="Eb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="13" beat="2" duration="1,66" note="Db4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+          <note measure="14" beat="8" duration="7,66" note="Gb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+          <note measure="18" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="18" beat="4" duration="3,66" note="Gb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+          <note measure="20" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="20" beat="4" duration="3,66" note="Gb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+          <note measure="23" beat="2" duration="1,66" note="Eb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="24" beat="2" duration="1,66" note="Db4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="25" beat="8" duration="7,66" note="Gb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="29" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="29" beat="4" duration="3,66" note="Gb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="31" beat="8" duration="7,66" note="Eb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="35" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="35" beat="4" duration="3,66" note="Gb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="37" beat="8" duration="7,66" note="Db3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="41" beat="4" duration="3,66" note="B3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="41" beat="4" duration="3,66" note="F4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="43" beat="4" duration="3,66" note="B3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="43" beat="4" duration="3,66" note="F4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+		  <note measure="45" beat="2" duration="1,66" note="Eb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="46" beat="2" duration="1,66" note="Db4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="47" beat="8" duration="7,66" note="Db3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="51" beat="4" duration="3,66" note="B3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="51" beat="4" duration="3,66" note="F4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="53" beat="4" duration="3,66" note="B3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="53" beat="4" duration="3,66" note="F4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="55" beat="2" duration="1,66" note="Eb4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="56" beat="2" duration="1,66" note="Db4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="57" beat="8" duration="7,66" note="Db3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="61" beat="4" duration="3,66" note="B3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="61" beat="4" duration="3,66" note="F4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  		  
+		  <note measure="63" beat="8" duration="7,66" note="Eb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="67" beat="4" duration="3,66" note="B3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="67" beat="4" duration="3,66" note="F4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+         
+		  <note measure="69" beat="8" duration="7,66" note="Gb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="73" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="73" beat="4" duration="3,66" note="G4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+		  
+		  <note measure="75" beat="4" duration="3,66" note="Bb3" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+          <note measure="75" beat="4" duration="3,66" note="G4" harmonics="0.1 0.03 0.02 0.01 0.01 0.0 0.01 0.0" vibrato="60 0.05"/>
+
+     </instrument>
+</score>
