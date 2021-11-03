@@ -133,6 +133,8 @@
     <ClCompile Include="CAdditiveSynth.cpp" />
     <ClCompile Include="CAR.cpp" />
     <ClCompile Include="CAudioNode.cpp" />
+    <ClCompile Include="CChorus.cpp" />
+    <ClCompile Include="CEffect.cpp" />
     <ClCompile Include="CEffects.cpp" />
     <ClCompile Include="CInstrument.cpp" />
     <ClCompile Include="CNote.cpp" />
@@ -160,6 +162,8 @@
     <ClInclude Include="CAdditiveSynth.h" />
     <ClInclude Include="CAR.h" />
     <ClInclude Include="CAudioNode.h" />
+    <ClInclude Include="CChorus.h" />
+    <ClInclude Include="CEffect.h" />
     <ClInclude Include="CEffects.h" />
     <ClInclude Include="CInstrument.h" />
     <ClInclude Include="CNote.h" />

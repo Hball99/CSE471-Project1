@@ -81,6 +81,12 @@
     <ClCompile Include="CEffects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CChorus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="audio\DirSound.h">
@@ -159,6 +165,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CEffects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CChorus.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
