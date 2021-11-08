@@ -66,7 +66,7 @@ void CReverbation::ProcessStream(double* in_frame, int channels) {
     in_frame[1] = 0.0;
     int factor = 1;
     for (int i = 1; i < 10; i++) {
-        int rdloc = int(m_wrloc + 100000 - reverbation_rate * i * (sample_rate / 10000)) % 100000;
+        int rdloc = int(m_wrloc + 100000 - reverbation_rate * sample_rate * i ) % 100000;
         in_frame[0] += reverbation_queue_0[rdloc] * 1/(i+1) * reverbation_wet;
         in_frame[1] += reverbation_queue_1[rdloc] * 1/(i+1) * reverbation_wet;
         factor += 1 / (i+1);

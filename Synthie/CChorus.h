@@ -12,7 +12,6 @@ public:
 private:
 	bool chorus;
 	double chorus_delay;
-	double chorus_range;
 	double chorus_wet;
 	double chorus_dry;
 	int m_wrloc;

@@ -6,7 +6,6 @@
 CFlanging::CFlanging() {
     flanging = false;
     flanging_delay = 0.0;
-    flanging_range = 0.0;
     flanging_wet = 0.0;
     flanging_dry = 0.0;
     flanging_level = 0.0;
@@ -51,10 +50,6 @@ void CFlanging::XmlLoad(IXMLDOMNode* xml, std::wstring& effect) {
             {
                 flanging_delay = std::stod(value.bstrVal);
             }
-            else if (name == "range")
-            {
-                flanging_range = std::stod(value.bstrVal);
-            }
             else if (name == "wet")
             {
                 flanging_wet = std::stod(value.bstrVal);
@@ -74,14 +69,13 @@ void CFlanging::ProcessStream(double* in_frame, int channels) {
     double original[2] = { in_frame[0], in_frame[1] };
     
     assert(flanging & channels==2);
-    double delay = flanging_delay / 10000 + (flanging_range * flanging_delay / 10000);
 
     m_wrloc = (m_wrloc + 1) % 100000;
     flanging_queue_0[m_wrloc] = in_frame[0];
     flanging_queue_1[m_wrloc] = in_frame[1];
             
 
-    int length = int((delay * sample_rate + 0.5)) * 2;
+    int length = int((flanging_delay * sample_rate + 0.5)) * 2;
     int rdloc = (m_wrloc + 100000 - length) % 100000;
 
     in_frame[0] = (in_frame[0] / 3 + (output_queue_0[rdloc] * flanging_level) / 3 + 

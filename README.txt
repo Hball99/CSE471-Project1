@@ -39,7 +39,7 @@ The format of the score-file is the following:
 	  :
 	  :
      </instrument>
+         <effect effect="flanging" delay="" wet="" dry="" level=""/>
 	 <effect effect="reverbation" rate="" wet="" dry=""/>
-	 <effect effect="chorus" delay="" range="" wet="" dry=""/>
-	 <effect effect="flanging" delay="" range="" wet="" dry="" level=""/>
+	 <effect effect="chorus" delay="" wet="" dry=""/>
 </score>

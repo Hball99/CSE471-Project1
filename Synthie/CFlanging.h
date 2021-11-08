@@ -13,7 +13,6 @@ public:
 private:
 	bool flanging;
 	double flanging_delay;
-	double flanging_range;
 	double flanging_wet;
 	double flanging_dry;
 	double flanging_level;

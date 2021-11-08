@@ -5,7 +5,6 @@
 CChorus::CChorus() {
     chorus = false;
     chorus_delay = 0.0;
-    chorus_range = 0.0;
     chorus_wet = 0.0;
     chorus_dry = 0.0;
     chorus_queue_0.resize(100000);
@@ -47,10 +46,6 @@ void CChorus::XmlLoad(IXMLDOMNode* xml, std::wstring& effect) {
             {
                 chorus_delay = std::stod(value.bstrVal);
             }
-            else if (name == "range")
-            {
-                chorus_range = std::stod(value.bstrVal);
-            }
             else if (name == "wet")
             {
                 chorus_wet = std::stod(value.bstrVal);
@@ -67,8 +62,7 @@ void CChorus::ProcessStream(double* in_frame, int channels) {
 
     assert(chorus && channels == 2);
     double original[2] = { in_frame[0], in_frame[1] };
-    double delay = chorus_delay / 10000 + (chorus_range * chorus_delay / 10000);
-    int length = int((delay * sample_rate + 0.5)) * 2;
+    int length = int((chorus_delay * sample_rate + 0.5));
 
     m_wrloc = (m_wrloc + 1) % 100000;
     int rdloc = (m_wrloc + 100000 - length) % 100000;
