@@ -60,12 +60,12 @@ void CAdditiveSynth::Start()
 
         // Tell the AR object it gets its samples from 
         // the sine wave object.
-        CAR ar;
-        ar.SetSource(&(*it));
-        ar.SetSampleRate(GetSampleRate());
-        ar.Start();
+        CEnvelope adsr;
+        adsr.SetSource(&(*it));
+        adsr.SetSampleRate(GetSampleRate());
+        adsr.Start();
 
-        m_ars.push_back(ar);
+        m_adsrs.push_back(adsr);
     }
 
     m_time = 0;
@@ -91,9 +91,9 @@ bool CAdditiveSynth::Generate()
     return m_time < m_duration;
     */
     bool valid;
-    m_frame[0] = m_ars[0].Frame(0);
-    m_frame[1] = m_ars[0].Frame(1);
-    for (std::vector<CAR>::iterator it = m_ars.begin()++; it != m_ars.end(); ++it) {
+    m_frame[0] = m_adsrs[0].Frame(0);
+    m_frame[1] = m_adsrs[0].Frame(1);
+    for (std::vector<CEnvelope>::iterator it = m_adsrs.begin()++; it != m_adsrs.end(); ++it) {
         valid = it->Generate(m_duration); //TODO: Different Amplitude for each harmonic
         m_frame[0] += it->Frame(0);
         m_frame[1] += it->Frame(1);

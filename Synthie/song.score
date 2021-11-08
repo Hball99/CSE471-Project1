@@ -158,7 +158,7 @@
 		  <note measure="157" beat="5" duration="3,66" note="Bb3" harmonics="0.12 0.01 0.01 0.1 0.0 0.0 0.0 0.0" vibrato="60 0.05"/>
           <note measure="157" beat="5" duration="3,66" note="Gb4" harmonics="0.12 0.01 0.01 0.1 0.0 0.0 0.0 0.0" vibrato="60 0.05"/>
      </instrument>
-	 <effect effect="reverbation" rate="100"/>
-	 <effect effect="chorus" delay="200" range="1" wet="0.7" dry="0.3"/>
+	 <effect effect="reverbation" rate="100" wet="0.7" dry="0.3"/>
+	 <effect effect="chorus" delay="200" range="1" wet="1.0" dry="0.0"/>
 	 <effect effect="flanging" delay="100" range="2" wet="0.7" dry="0.3" level="1"/>
 </score>

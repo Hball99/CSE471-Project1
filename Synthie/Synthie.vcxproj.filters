@@ -72,7 +72,7 @@
     <ClCompile Include="CNote.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CAR.cpp">
+    <ClCompile Include="CEnvelope.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CAdditiveSynth.cpp">
@@ -164,7 +164,7 @@
     <ClInclude Include="CNote.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CAR.h">
+    <ClInclude Include="CEnvelope.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CAdditiveSynth.h">

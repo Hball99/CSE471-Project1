@@ -1,7 +1,7 @@
 #pragma once
 #include "CInstrument.h"
 #include "CSineWave.h"
-#include "CAR.h"
+#include "CEnvelope.h"
 #include "vector"
 
 class CAdditiveSynth :
@@ -22,7 +22,7 @@ public:
 
 private:
     std::vector<CSineWave>   m_sinewaves;
-    std::vector<CAR>         m_ars;
+    std::vector<CEnvelope>   m_adsrs;
 
     double      m_duration;
     double      m_time;

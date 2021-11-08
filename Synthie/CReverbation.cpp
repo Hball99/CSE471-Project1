@@ -9,6 +9,8 @@ CReverbation::CReverbation() {
     m_wrloc = 0;
     reverbation_rate = 0;
     reverbation = false;
+    reverbation_wet = 0.0;
+    reverbation_dry = 0.0;
 }
 
 CReverbation::~CReverbation() {
@@ -41,27 +43,36 @@ void CReverbation::XmlLoad(IXMLDOMNode* xml, std::wstring& effect) {
             {
                 reverbation_rate = std::stod(value.bstrVal);
             }
+            else if (name == "wet")
+            {
+                reverbation_wet = std::stod(value.bstrVal);
+            }
+            else if (name == "dry")
+            {
+                reverbation_dry = std::stod(value.bstrVal);
+            }
         }
     }
 }
 
 void CReverbation::ProcessStream(double* in_frame, int channels) {
     assert(reverbation && channels == 2);
-    
+    double original[2] = { in_frame[0], in_frame[1] };
     m_wrloc = (m_wrloc + 1) % 100000;
 
     reverbation_queue_0[(m_wrloc)] = in_frame[0];
     reverbation_queue_1[(m_wrloc)] = in_frame[1];
-
+    in_frame[0] = 0.0;
+    in_frame[1] = 0.0;
     int factor = 1;
-    for (int i = 2; i < int(max((reverbation_rate / 7),10)); i++) {
+    for (int i = 1; i < 10; i++) {
         int rdloc = int(m_wrloc + 100000 - reverbation_rate * i * (sample_rate / 10000)) % 100000;
-        in_frame[0] += reverbation_queue_0[rdloc] * 1/i;
-        in_frame[1] += reverbation_queue_1[rdloc] * 1/i;
-        factor += 1 / i;
+        in_frame[0] += reverbation_queue_0[rdloc] * 1/(i+1) * reverbation_wet;
+        in_frame[1] += reverbation_queue_1[rdloc] * 1/(i+1) * reverbation_wet;
+        factor += 1 / (i+1);
     }
     
-    in_frame[0] /= factor;
-    in_frame[1] /= factor;
+    in_frame[0] = in_frame[0] / factor + original[0] * reverbation_dry;
+    in_frame[1] = in_frame[1] / factor + original[1] * reverbation_dry;
     
 }

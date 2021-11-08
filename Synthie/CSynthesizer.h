@@ -5,7 +5,7 @@
 #include "CInstrument.h"
 #include <string>
 #include "CNote.h"
-#include "CAR.h"
+#include "CEnvelope.h"
 #include "CEffects.h"
 
 

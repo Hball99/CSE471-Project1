@@ -14,6 +14,8 @@ private:
 	bool reverbation;
 	int m_wrloc;
 	double reverbation_rate;
+	double reverbation_dry;
+	double reverbation_wet;
 	std::vector<double> reverbation_queue_0;
 	std::vector<double> reverbation_queue_1;
 	std::vector<double> output_queue_0;
