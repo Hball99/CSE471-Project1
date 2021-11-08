@@ -226,6 +226,7 @@ void CSynthesizer::XmlLoadScore(IXMLDOMNode* xml) {
     xml->get_attributes(&attributes);
     long len;
     attributes->get_length(&len);
+    effects.empty();
 
     // Loop over the list of attributes
     for (int i = 0; i < len; i++)

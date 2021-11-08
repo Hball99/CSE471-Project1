@@ -136,6 +136,7 @@
     <ClCompile Include="CChorus.cpp" />
     <ClCompile Include="CEffect.cpp" />
     <ClCompile Include="CEffects.cpp" />
+    <ClCompile Include="CFlanging.cpp" />
     <ClCompile Include="CInstrument.cpp" />
     <ClCompile Include="CNote.cpp" />
     <ClCompile Include="CSineWave.cpp" />
@@ -149,6 +150,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="CReverbation.cpp" />
     <ClCompile Include="Synthie.cpp" />
     <ClCompile Include="SynthieView.cpp" />
     <ClCompile Include="audio\Wave.cpp" />
@@ -165,6 +167,7 @@
     <ClInclude Include="CChorus.h" />
     <ClInclude Include="CEffect.h" />
     <ClInclude Include="CEffects.h" />
+    <ClInclude Include="CFlanging.h" />
     <ClInclude Include="CInstrument.h" />
     <ClInclude Include="CNote.h" />
     <ClInclude Include="CSineWave.h" />
@@ -177,6 +180,7 @@
     <ClInclude Include="ProgressDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="CReverbation.h" />
     <ClInclude Include="Synthie.h" />
     <ClInclude Include="SynthieView.h" />
     <ClInclude Include="targetver.h" />

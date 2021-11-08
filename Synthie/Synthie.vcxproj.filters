@@ -87,6 +87,12 @@
     <ClCompile Include="CChorus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CFlanging.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CReverbation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="audio\DirSound.h">
@@ -171,6 +177,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CChorus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CFlanging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CReverbation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

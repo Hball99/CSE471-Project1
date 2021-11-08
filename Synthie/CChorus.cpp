@@ -5,11 +5,11 @@
 CChorus::CChorus() {
     chorus = false;
     chorus_delay = 0.0;
-    chorus_rate = 0.0;
     chorus_range = 0.0;
     chorus_wet = 0.0;
     chorus_dry = 0.0;
-    chorus_queue.resize(100000);
+    chorus_queue_0.resize(100000);
+    chorus_queue_1.resize(100000);
     m_wrloc = 0;
 }
 
@@ -51,10 +51,6 @@ void CChorus::XmlLoad(IXMLDOMNode* xml, std::wstring& effect) {
             {
                 chorus_range = std::stod(value.bstrVal);
             }
-            else if (name == "rate")
-            {
-                chorus_rate = std::stod(value.bstrVal);
-            }
             else if (name == "wet")
             {
                 chorus_wet = std::stod(value.bstrVal);
@@ -68,22 +64,18 @@ void CChorus::XmlLoad(IXMLDOMNode* xml, std::wstring& effect) {
 }
 
 void CChorus::ProcessStream(double* in_frame, int channels) {
+
+    assert(chorus && channels == 2);
     double original[2] = { in_frame[0], in_frame[1] };
-    for (int c = 0; c < channels; c++)
-    {
-        if (chorus) {
-            double delay = chorus_delay / 10000 + (chorus_range * chorus_delay / 10000) * sin(2 * PI * chorus_rate);
-            int length = int((delay * sample_rate + 0.5)) * 2;
+    double delay = chorus_delay / 10000 + (chorus_range * chorus_delay / 10000);
+    int length = int((delay * sample_rate + 0.5)) * 2;
 
-            m_wrloc = (m_wrloc + 1) % 100000;
-            int rdloc = (m_wrloc + 100000 - length) % 100000;
+    m_wrloc = (m_wrloc + 1) % 100000;
+    int rdloc = (m_wrloc + 100000 - length) % 100000;
 
-            chorus_queue[m_wrloc] = in_frame[0];
+    chorus_queue_0[m_wrloc] = in_frame[0];
+    chorus_queue_1[m_wrloc] = in_frame[1];
 
-            in_frame[c] = 0.5 * in_frame[c] + 0.5 * chorus_queue[rdloc];
-            in_frame[c] *= chorus_wet;
-
-            in_frame[c] += original[c] * chorus_dry;
-        }
-    }
+    in_frame[0] = 0.5 * in_frame[0] + 0.5 * chorus_queue_0[rdloc] * chorus_wet + original[0] * chorus_dry;
+    in_frame[1] = 0.5 * in_frame[1] + 0.5 * chorus_queue_1[rdloc] * chorus_wet + original[1] * chorus_dry;      
 }

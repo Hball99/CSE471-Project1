@@ -13,10 +13,10 @@ private:
 	bool chorus;
 	double chorus_delay;
 	double chorus_range;
-	double chorus_rate;
 	double chorus_wet;
 	double chorus_dry;
 	int m_wrloc;
-	std::vector<double> chorus_queue;
+	std::vector<double> chorus_queue_0;
+	std::vector<double> chorus_queue_1;
 };
 
